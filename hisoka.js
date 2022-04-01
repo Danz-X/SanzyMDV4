@@ -1675,21 +1675,21 @@ break
 case 'igstalk': case 'stalkig': {
 if (!text) throw `Kirim perintah ${prefix + command} *username*\n\nExample : ${prefix + command} Jokowi`
 m.reply(mess.wait)
-let anu = await fetchJson(`https://api.lolhuman.xyz/api/stalkig/${text}?apikey=sanzychan01`)
+let anu = await fetchJson(`https://api.lolhuman.xyz/api/stalkig/${text}?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { image: { url: anu.result.photo_profile }, caption: `Username : ${anu.result.username}\nFull Name : ${anu.result.fullname}\nFollowers : ${anu.result.followers}\nFollowing : ${anu.result.following}\nBio : ${anu.result.bio}`}, { quoted: ftroli })
 }
 break
 case 'tiktokstalk': case 'ttstalk': case 'stalktiktok': {
 if (!text) throw `Kirim perintah ${prefix + command} *username*\n\nExample : ${prefix + command} Jes No Limit`
 m.reply(mess.wait)
-let anu = await fetchJson(`https://api.lolhuman.xyz/api/stalktiktok/${text}?apikey=sanzychan01`)
+let anu = await fetchJson(`https://api.lolhuman.xyz/api/stalktiktok/${text}?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { image: { url: anu.result.user_picture }, caption: `Username : ${anu.result.username}\nNick Name : ${anu.result.nickname}\nBio : ${anu.result.bio}\nFollowers : ${anu.result.followers}\nFollowings : ${anu.result.followings}\nLikes : ${anu.result.likes}\nVideo : ${anu.result.video}`}, { quoted: ftroli })
 }
 break
 case 'stalktwit': case 'stalktwitter': case 'twitterstalk': {
 if (!text) throw `Kirim perintah ${prefix + command} *username*\n\nExample : ${prefix + command} Jokowi`
 m.reply(mess.wait)
-let anu = await fetchJson(`https://api.lolhuman.xyz/api/twitter/${text}?apikey=sanzychan01`)
+let anu = await fetchJson(`https://api.lolhuman.xyz/api/twitter/${text}?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { image: { url: anu.result.profile_picture }, caption: `Name : ${anu.result.name}\nScreen Name : ${anu.result.screen_name}\nFollowers : ${anu.result.followers}\nFollowing : ${anu.result.following}\nBio : ${anu.result.bio}\nTweet : ${anu.result.tweet}\nDeskripsi : ${anu.result.description}\nJoined : ${anu.result.joined}`}, { quoted: ftroli })
 }
 break
@@ -1828,7 +1828,7 @@ if (!/image/.test(mime)) return m.reply(`Kirim/Reply Foto`)
 m.reply(mess.wait)
 mee = await hisoka.downloadAndSaveMediaMessage(quoted)
 mem = await TelegraPh(mee)
-meme = `https://api.lolhuman.xyz/api/editor/${command}?apikey=sanzychan01&img=${mem}`
+meme = `https://api.lolhuman.xyz/api/editor/${command}?apikey=Deffbotz&img=${mem}`
 memek = await hisoka.sendImageAsSticker(m.chat, meme, m, { packname: global.packname, author: global.author })
 await fs.unlinkSync(memek)
 }
@@ -1861,7 +1861,7 @@ if (!/image/.test(mime)) return m.reply(`Kirim/Reply Foto`)
 m.reply(mess.wait)
 mee = await hisoka.downloadAndSaveMediaMessage(quoted)
 mem = await TelegraPh(mee)
-meme = `https://api.lolhuman.xyz/api/filter/${command}?apikey=sanzychan01&img=${mem}`
+meme = `https://api.lolhuman.xyz/api/filter/${command}?apikey=Deffbotz&img=${mem}`
 memek = await hisoka.sendImageAsSticker(m.chat, meme, m, { packname: global.packname, author: global.author })
 await fs.unlinkSync(memek)
 }
@@ -1875,7 +1875,7 @@ if (!/image/.test(mime)) return m.reply(`Kirim/Reply Foto`)
 m.reply(mess.wait)
 mee = await hisoka.downloadAndSaveMediaMessage(quoted)
 mem = await TelegraPh(mee)
-meme = `https://api.lolhuman.xyz/api/creator1/${command}?apikey=sanzychan01&img=${mem}`
+meme = `https://api.lolhuman.xyz/api/creator1/${command}?apikey=Deffbotz&img=${mem}`
 memek = await hisoka.sendImageAsSticker(m.chat, meme, m, { packname: global.packname, author: global.author })
 await fs.unlinkSync(memek)
 }
@@ -2031,7 +2031,7 @@ hisoka.sendMessage(m.chat, { image: anu, caption: `Nih  Kak` }, { quoted: m})
 break
 case 'patrick': case 'gawrgura': {
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/sticker/${command}?apikey=sanzychan01`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/sticker/${command}?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { sticker: anu, caption: `Nih  Kak` }, { quoted: m})
 }
 break
@@ -2045,7 +2045,7 @@ case 'badboy':
 case 'badgirl': {
 if (!text) throw `Example : ${prefix + command} ${pushname} tolol`
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/${command}?apikey=sanzychan01&name=${text}`) 
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/${command}?apikey=Deffbotz&name=${text}`) 
 hisoka.sendMessage(m.chat, { image: anu, caption: `Nih  Kak` }, { quoted: ftroli})
 }
 break
@@ -2053,7 +2053,7 @@ break
 case 'pacarserti': {
 if (!text) throw `Example : ${prefix + command} Teks1: ${pushname} Teks2: ${pushmame} `
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/pacarserti?apikey=sanzychan01&name1=${text}&name2=${text}`) 
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/pacarserti?apikey=Deffbotz&name1=${text}&name2=${text}`) 
 hisoka.sendMessage(m.chat, { image: anu, caption: `Nih  Kak` }, { quoted: ftroli})
 }
 break
@@ -2181,7 +2181,7 @@ break
 case 'shadow': case 'cup': case 'cup1': case 'burnpaper': case 'lovemessage': case 'undergrass': case 'woodheart': case 'woodenboard': case 'wolfmetal': case 'nature3d': case 'underwater': case 'golderrose': case 'fallleaves': case 'flamming': case 'harrypotter': {
 if (!text) throw `Example : ${prefix + command} SanzyYT`
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/photooxy1/${command}?apikey=sanzychan01&text=${text}`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/photooxy1/${command}?apikey=Deffbotz&text=${text}`)
 hisoka.sendMessage(m.chat, { image: anu, caption: `Nih  Kak` }, { quoted: ftroli})
 }
 break
@@ -2249,14 +2249,14 @@ break
 case 'wetglass': case 'multicolor3d': case 'watercolor': case 'luxurygold': case 'galaxywallpaper': case 'lighttext': case 'beautifulflower': case 'royaltext': case 'heartshaped': case 'birdhdaycake': case 'galaxystyle': case 'hologram3d': case 'greenneon': case 'glossychrome': case 'greenbush': case 'metallogo': case 'neoltext': case 'glittergold': case 'textcake': case 'startsnight': case 'wooden3d': case 'textbyname': case 'writegalacy': case 'galaxybat': case 'snow3d': case 'birthdayday': case 'silverplaybutton': case 'cartoongravity': case 'anonymhacker': case 'mlwall': case 'pubgmaskot': case 'aovwall': case 'logogaming': case 'fpslogo': case 'avatarlolnew': case 'lolbanner': case 'avatardota': {
 if (!text) throw `Example : ${prefix + command} SanzyYT`
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=sanzychan01&text=${text}`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=Deffbotz&text=${text}`)
 hisoka.sendMessage(m.chat, { image: anu, caption: `Nih  Kak` }, { quoted: ftroli})
 }
 break
 case 'juventusshirt': case 'cutegravity': case 'realvintage': case 'codwarzone': {
 if (!text) throw `Example : ${prefix + command} SanzyYT`
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/ephoto2/codwarzone?apikey=sanzychan01&text1=${text}&text2=${text}`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/ephoto2/codwarzone?apikey=Deffbotz&text1=${text}&text2=${text}`)
 hisoka.sendMessage(m.chat, { image: anu, caption: `Nih  Kak` }, { quoted: ftroli})
 }
 break
@@ -2583,7 +2583,7 @@ break
 case 'mediafire': case 'mediafiredl': {
 if (!text) throw 'No Query Url!'
 m.reply(mess.wait)
-let anu = await fetchJson(`https://api.lolhuman.xyz/api/mediafire?apikey=sanzychan01&url=${text}`)
+let anu = await fetchJson(`https://api.lolhuman.xyz/api/mediafire?apikey=Deffbotz&url=${text}`)
 let buttons = [{buttonId: `mddl ${isUrl(text)}`, buttonText: {displayText: 'DOWNLOAD'}, type: 1}]
 let buttonMessage = {
 text: `File Berhasil Di Dapatkan\n\nNama : ${anu.result.filename}\nSize : ${anu.result.filesize}\nLink : ${anu.result.link}\nUpload : ${anu.result.uploaded}\n\nSilahkan Klik Tombol Download Di Bawah Ini`,
@@ -2597,7 +2597,7 @@ break
 case 'mddl': {
 if (!text) throw 'No Query Url!'
 m.reply(mess.wait)
-let anu = await fetchJson(`https://api.lolhuman.xyz/api/mediafire?apikey=sanzychan01&url=${text}`)
+let anu = await fetchJson(`https://api.lolhuman.xyz/api/mediafire?apikey=Deffbotz&url=${text}`)
 hisoka.sendText(m.chat, util.format(anu), m)
 hisoka.sendMedia(m.chat, anu.result.link, {quoted: ftroli, mimetype: anu.result.mime, filename: anu.result.filename})
 }
@@ -2721,7 +2721,7 @@ Untuk Download Media Silahkan Klik salah satu Button dibawah ini atau masukkan c
 case 'groupwhatsapp': {
 if (!text) throw `Example : ${prefix + command} Islami`
 m.reply(mess.wait)
-let anu = await fetchJson(`https://api.lolhuman.xyz/api/groupwhatsapp?apikey=sanzychan01&query=${text}`)
+let anu = await fetchJson(`https://api.lolhuman.xyz/api/groupwhatsapp?apikey=Deffbotz&query=${text}`)
 resultnya = anu.result
 for (var x of resultnya) {
 txt =`Nama : ${x.name}\nGenre : ${x.genre}\nLink : ${x.link}`
@@ -2732,7 +2732,7 @@ break
 case 'jadwalshalat': case 'jadwalsholat': {
 if (!text) throw `Example : ${prefix + command} Pekanbaru`
 m.reply(mess.wait)
-let anu = await fetchJson(`https://api.lolhuman.xyz/api/sholat/pekanbaru?apikey=sanzychan01`)
+let anu = await fetchJson(`https://api.lolhuman.xyz/api/sholat/pekanbaru?apikey=Deffbotz`)
 txt =`Wilayah : ${anu.result.wilayah}\nSahur : ${anu.result.sahur}\nImsak: ${anu.result.imsak}\nSubuh : ${anu.result.subuh}\nTerbit : ${anu.result.terbit}\nDhuha : ${anu.result.dhuha}\nDzuhur : ${anu.result.dzuhur}\nAshar : ${anu.result.ashar}\nMaghrib : ${anu.result.maghrib}\nIsya : ${anu.result.isya}\nTanggal : ${anu.result.tanggal}`
 m.reply(txt)
 }
@@ -2829,67 +2829,67 @@ ${id}`)
 		break
 case 'audio1': {
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/1?apikey=sanzychan01`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/1?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { audio: anu, mimetype: 'audio/mpeg'}, { quoted: m })
 }
 break
 case 'audio2': {
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/2?apikey=sanzychan01`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/2?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { audio: anu, mimetype: 'audio/mpeg'}, { quoted: m })
 }
 break
 case 'audio3': {
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/3?apikey=sanzychan01`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/3?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { audio: anu, mimetype: 'audio/mpeg'}, { quoted: m })
 }
 break
 case 'audio4': {
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/4?apikey=sanzychan01`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/4?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { audio: anu, mimetype: 'audio/mpeg'}, { quoted: m })
 }
 break
 case 'audio5': {
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/5?apikey=sanzychan01`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/5?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { audio: anu, mimetype: 'audio/mpeg'}, { quoted: m })
 }
 break
 case 'audio6': {
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/6?apikey=sanzychan01`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/6?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { audio: anu, mimetype: 'audio/mpeg'}, { quoted: m })
 }
 break
 case 'audio7': {
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/7?apikey=sanzychan01`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/7?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { audio: anu, mimetype: 'audio/mpeg'}, { quoted: m })
 }
 break
 case 'audio8': {
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/8?apikey=sanzychan01`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/8?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { audio: anu, mimetype: 'audio/mpeg'}, { quoted: m })
 }
 break
 case 'audio9': {
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/9?apikey=sanzychan01`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/9?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { audio: anu, mimetype: 'audio/mpeg'}, { quoted: m })
 }
 break
 case 'audio10': {
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/10?apikey=sanzychan01`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/quran/audio/10?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { audio: anu, mimetype: 'audio/mpeg'}, { quoted: m })
 }
 break
 case 'anime': case 'waifu': case 'husbu': case 'shinobu': case 'megumin': case 'waifus': case 'nekos': {
 m.reply(mess.wait)
-let anu = await getBuffer(`https://zenzapi.xyz/api/random/${command}?apikey=sanzychan01`)
+let anu = await getBuffer(`https://zenzapi.xyz/api/random/${command}?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { image: anu, caption: `Nih  Kak` }, { quoted: m})
 }
 break
@@ -3002,26 +3002,26 @@ break
 case 'phcomment': {
 if (!text) throw `Example : ${prefix + command} Keren Sih`
 m.reply(mess.wait)
-let anu = await getBuffer(`https://zenzapi.xyz/api/image/phcomment?image=https://i.ibb.co/KjSBWx4/Pics-Art-02-07-11-45-03.jpg&text=${text}&username=SanzyYT&apikey=sanzychan01`)
+let anu = await getBuffer(`https://zenzapi.xyz/api/image/phcomment?image=https://i.ibb.co/KjSBWx4/Pics-Art-02-07-11-45-03.jpg&text=${text}&username=SanzyYT&apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { image: anu, caption: `Nih  Kak` }, { quoted: m})
 }
 break
 case 'ytcomment': {
 if (!text) throw `Example : ${prefix + command} Keren Sih`
 m.reply(mess.wait)
-let anu = await getBuffer(`https://zenzapi.xyz/api/image/ytcomment?image=https://i.ibb.co/KjSBWx4/Pics-Art-02-07-11-45-03.jpg&text=${text}&username=SanzyYT&apikey=sanzychan01`)
+let anu = await getBuffer(`https://zenzapi.xyz/api/image/ytcomment?image=https://i.ibb.co/KjSBWx4/Pics-Art-02-07-11-45-03.jpg&text=${text}&username=SanzyYT&apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { image: anu, caption: `Nih  Kak` }, { quoted: m})
 }
 break
 case 'kannagen': {
 if (!text) throw `Exampel : ${prefix + command} SanzyYT`
-let anu = await getBuffer (`https://zenzapi.xyz/api/image/kannagen?text=${text}&apikey=sanzychan01`)
+let anu = await getBuffer (`https://zenzapi.xyz/api/image/kannagen?text=${text}&apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { image: anu, caption: `Nih  Kak` }, { quoted: m})
 }
 break
 case 'asupan': {
 m.reply(mess.wait)
-let anu = await getBuffer(`https://api.lolhuman.xyz/api/asupan?apikey=sanzychan01`)
+let anu = await getBuffer(`https://api.lolhuman.xyz/api/asupan?apikey=Deffbotz`)
 hisoka.sendMessage(m.chat, { video: anu, caption: `Nih  Kak` }, { quoted: m})
 }
 break
